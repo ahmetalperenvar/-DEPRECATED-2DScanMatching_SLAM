@@ -106,8 +106,6 @@ Do scan matching?
 Travel X distance before doing another
 scanmatching (m)
 
-#### distancethreshold unused
-
 #### handle
 Tells which algorithm to use for scan matching.
 Upon changing this, remember to change the parameters as in the scan matcher optionsl list below.
