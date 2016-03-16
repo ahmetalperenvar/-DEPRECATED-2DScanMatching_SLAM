@@ -1,0 +1,33 @@
+function [ xmin xmax ymin ymax ] = minmaxScan( S )
+%MINMAXSCAN return the minimumand maximum value of both components listed
+%in a scan set. Returns 4 values representing the minimum x value, the
+%maximum x value, the minimum y value and the maximum y value.
+
+xmax=-inf;
+xmin=inf;
+ymin=inf;
+ymax=-inf;
+
+for i=1:size(S,1)
+    x=S(i,1);
+    y=S(i,2);
+    
+    if x > xmax
+        xmax = x;
+    end
+    
+    if x < xmin
+        xmin = x;
+    end
+
+    if y < ymin
+        ymin = y;
+    end
+    
+    if y > ymax
+        ymax = y;
+    end
+end
+
+end
+
