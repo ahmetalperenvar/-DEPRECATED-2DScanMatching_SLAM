@@ -7,6 +7,8 @@ understand how ScanMatching and SLAM works. The user will be able to work and mo
 source MATLAB code for its own purposes. This document explains how the toolbox can be executed
 and defines the internal structure so that the user can modify the code.
 
+##### Notes: This investigation was performed in 2011 and it has not been kept up to date. Most of past years investigation relies on 3D scan matching thus this algorithms are still somewhat actual. The purpose of the package is purely educational. The code is not optimized nor efficient.
+
 # Simple Execution
 
 To execute the file, simply include the root directory in your MATLAB path, then, type (or run)
