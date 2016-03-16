@@ -30,6 +30,7 @@ Inline-style:
 ![alt text](https://github.com/szandara/2DScanMatching_SLAM/blob/master/icp.gif "ICP Scan Correction example")
 
 # Scan Matchers configuration
+The following are the sensitive parameters for each aglorithm. The table shows the default and recommended parameters which are valid for most use cases. Playing with these parameters could deliver better or worse results.
 
 | Tables        | Angular Threshold           | Radial Threshold  | Grid Resolution  | Min. Iterations  |
 | ------------- |:-------------:| -----:|-----:|-----:|
