@@ -112,12 +112,11 @@ scanmatching (m)
 Tells which algorithm to use for scan matching.
 Upon changing this, remember to change the parameters as in the scan matcher optionsl list below.
 
-#### associate Specify which association method to use. Only if
-'handle' is set to 'icpbSM'.
+#### associate 
+Specify which association method to use. Only if 'handle' is set to 'icpbSM'.
 
 #### register 
-Specify which registration method to use. Only if
-'handle' is set to 'icpbSM'.
+Specify which registration method to use. Only if 'handle' is set to 'icpbSM'.
 
 #### rejection 
 Only value @x84. Uses x84 rjection rule during
