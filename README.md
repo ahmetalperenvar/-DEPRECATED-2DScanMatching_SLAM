@@ -26,7 +26,7 @@ generate a random structured world and will
 correct the trajectory using an EKF based
 SLAM and ICP.
 
-Inline-style: 
+ICP Correction Example
 ![alt text](https://github.com/szandara/2DScanMatching_SLAM/blob/master/icp.gif "ICP Scan Correction example")
 
 # Scan Matchers configuration
