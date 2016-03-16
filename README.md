@@ -29,8 +29,26 @@ SLAM and ICP.
 Inline-style: 
 ![alt text](https://github.com/szandara/2DScanMatching_SLAM/blob/master/icp.gif "ICP Scan Correction example")
 
+# Scan Matchers configuration
 
-# Configuration
+| Tables        | Angular Threshold           | Radial Threshold  | Grid Resolution  | Min. Iterations  |
+| ------------- |:-------------:| -----:|-----:|-----:|
+| Parameter      | Opt.scanmatcher.Br(1) | Opt.scanmatcher.Br(2) | Opt.map.resolution | Opt.scanmatcher.niterconv
+| ICP     | -      |   0.3 + σ | - | 3 |
+| IDC     | 0.1 + σ|   0.3 + σ | - | 3 |
+| MBICP     | -      |   0.5 + σ | - | 3 |
+| PIC     | -      |   - | - | 3 |
+| NDT     | -      |   - | 3 | 3 |
+| LF-SOG     | -      |   0.3 + σ | - | 3 |
+| GENETIC     | 0.2 + σ/2      |   0.5 + σ/2 | 0.1 | 5 |
+| MONTECARLO     | 0.2 + σ/2      |   0.7+σ | 0.1 | 4 |
+| GMAPPING     | 0.2 + σ      |   2+2σ^2 | 0.1 | 5 |
+| ANGLEHISTOGRAM     | -     |   - |  1 | - |
+| FOURIER     | -   |   4+2σ^2 | 0.5 | - |
+| HOUGH     | -   |   1+σ | 4 | - | 
+
+
+# Other Configurations
 
 In order to change the following parameters. Modify the file Etc/cfg.m
 
@@ -122,21 +140,3 @@ unchanged
 
 ####  Opt.error 
 Tells whether to display the SLAM result
-
-# Scan Matchers configuration
-
-| Tables        | Angular Threshold           | Radial Threshold  | Grid Resolution  | Min. Iterations  |
-| ------------- |:-------------:| -----:|-----:|-----:|
-| Parameter      | Opt.scanmatcher.Br(1) | Opt.scanmatcher.Br(2) | Opt.map.resolution | Opt.scanmatcher.niterconv
-| ICP     | -      |   0.3 + σ | - | 3 |
-| IDC     | 0.1 + σ|   0.3 + σ | - | 3 |
-| MBICP     | -      |   0.5 + σ | - | 3 |
-| PIC     | -      |   - | - | 3 |
-| NDT     | -      |   - | 3 | 3 |
-| LF-SOG     | -      |   0.3 + σ | - | 3 |
-| GENETIC     | 0.2 + σ/2      |   0.5 + σ/2 | 0.1 | 5 |
-| MONTECARLO     | 0.2 + σ/2      |   0.7+σ | 0.1 | 4 |
-| GMAPPING     | 0.2 + σ      |   2+2σ^2 | 0.1 | 5 |
-| ANGLEHISTOGRAM     | -     |   - |  1 | - |
-| FOURIER     | -   |   4+2σ^2 | 0.5 | - |
-| HOUGH     | -   |   1+σ | 4 | - | 
