@@ -1,4 +1,4 @@
-# Scan Matching 2D Toolbox
+# Scan Matching 2D Toolbox - DEPRECATED
 
 The Scan Matching 2D Toolbox is a collection of 2D ScanMatching functions for range finder sensors.
 It contains a set of 12 algorithms plus a simple random world generator.
